@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>        
+        $(document).ready(function () {
+            $('#aboutMe').click(()=>$('#aboutMeContent').toggle(500))
+            $('#mother').click(()=>$('#motherContent').toggle(500))
+            $('#father').click(()=>$('#fatherContent').toggle(500))
+        })
+        
+    </script>
+    <title>General information</title>
+</head>
+<body class="indexBackground">
+    <div class="topMenuBlock">   
+        <div class="pageName">General information</div>
+        <div class="dropdownMenu">
+            <div class ="menuHamburger"></div>
+            <div class = "topMenu">
+                <a href="index.html"><div class = "topButton">General</div><div class="topButtonUnderline selected"></div></a>
+                <a href="pages/education.html"><div class = "topButton">Education</div><div class="topButtonUnderline"></div></a>
+                <a href="pages/skills.html"><div class = "topButton">Skills</div><div class="topButtonUnderline"></div></a>
+                <a href="pages/hobbies.html"><div class = "topButton">Hobbies</div><div class="topButtonUnderline"></div></a>
+            </div>
+        </div>
+    </div>    
+    <div class = mainPage>       
+        <div class = "expandBlock">
+            <button id="aboutMe">About me</button>
+            <div id="aboutMeContent">
+                <p>My name is</p>
+                <p class ="fname">OLEH</p>
+                <p class="lname">PAPENKO</p>
+                <p>I am 20 years old.</p>
+                <p>I live in Kyiv, Ukraine.</p>
+                <p>I work at KANINI.</p>
+            </div>
+        </div>
+        <div class = "expandBlock">
+            <button id="mother">My mother</button>
+            <div id="motherContent">                
+                <p>Her name is</p>
+                <p class ="fname">MARIYA</p>
+                <p class="lname">PAPENKO</p>
+                <p>She is 43 years old.</p>
+                <p>She live in Kyiv, Ukraine.</p>
+                <p>She is an accountant.</p>
+            </div>        
+        </div>
+        <div class = "expandBlock">
+            <button id="father">My father</button>
+            <div id="fatherContent">                
+                <p>His name is</p>
+                <p class ="fname">ALEX</p>
+                <p class="lname">PAPENKO</p>
+                <p>He is 45 years old.</p>
+                <p>He live in Kyiv, Ukraine.</p>
+                <p>He is an enginer.</p>
+            </div>        
+        </div>
+    </div>  
+    <div class="footer">
+        <span>Oleh Papenko</span>
+        <span>Email: olehpapenko.kanini@gmail.com</span>
+        <span>Phone: +380993750192</span>
+    </div>  
+</body>
+</html>
